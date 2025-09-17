@@ -1,0 +1,12 @@
+.esAlumno{
+  color: green;
+}
+
+.noEsAlumno{
+  color: brown;
+}
+
+
+.esAlumno, .noEsAlumno{
+  font-weight: bold;
+}

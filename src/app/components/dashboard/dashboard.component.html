@@ -1,0 +1,26 @@
+<div>
+    <table class="table">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+        <th>Alumno</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (personaVar of personas ; track personaVar ) {
+        <tr>
+          <td>{{personaVar.nombre}}</td>
+          <td>{{personaVar.edad}}</td>
+          <td>{{personaVar.esAlumno}}</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>
+
+<div>
+  @for (personaVar of personas ; track personaVar ) {
+    <app-darsh-board-child [personaChild]="personaVar"></app-darsh-board-child>
+  }
+</div>
